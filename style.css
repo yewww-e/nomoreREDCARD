@@ -1,7 +1,11 @@
-@media screen and (max-width:768px) {
-  #body {
-    
+@media screen and (max-width: 734px) {
+  .navbar li {padding: 3vw 0;}
+  @keyframes rotate {
+  0% { color: #E60013; transform: perspective(0px) rotateY(0deg);}
+  30% { color: #E60013;transform: perspective(50px) rotateY(180deg);}
+  100% { color: white;ransform: perspective(0px) rotateY(0deg);}
   }
+
 }
 
 body, nav, p, h1, a, li, ul {
@@ -86,7 +90,7 @@ nav {
 
 
 .row {
-  width: 60vw;
+  width: 60%;
   margin: auto;
 }
 
