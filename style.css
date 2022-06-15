@@ -1,0 +1,131 @@
+@media screen and (max-width:768px) {
+  #body {
+    
+  }
+}
+
+body, nav, p, h1, a, li, ul {
+  padding: 0; 
+  margin: 0;
+  word-break: keep-all;
+  text-decoration: none;
+  font-family: 'Gothic A1', sans-serif;
+  }
+body {background-color: black; overflow-x: hidden;}
+
+#mi {padding: 1vw}
+
+nav {
+  position: sticky; 
+  top: 0;
+  z-index: 20;
+  vertical-align: baseline;
+  background-color: black;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.about {
+  animation: rotate 3s;
+}
+
+@keyframes rotate {
+  0% { color: #E60013; transform: perspective(0px) rotateY(0deg);}
+  30% { color: #E60013;transform: perspective(50px) rotateY(180deg);}
+  35% { color: white;ransform: perspective(10px) rotateY(10deg);}
+  100% { color: white;ransform: perspective(0px) rotateY(0deg);}
+}
+
+.navbar li a {
+  display: block;
+  padding: 1vw;
+  margin-right: 4vw;
+  align-self: flex-end;
+  color: white;
+  font-size: 0.9vw;
+  font-style: italic;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+
+.navbar li a:hover {
+  transition: all 0.5s ease; 
+  background-color: #E60013;
+  color: black;
+}
+
+.progress-container {
+      width: 100%;
+      background: none;
+    }
+
+.progress-bar {
+      height: 0.2vw;
+      width: 0%;
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(230,0,19,1) 100%);
+      }
+
+#title p {
+  margin-top: -1vw;
+  margin-bottom: 5vw;
+  font-family: "Audiowide", sans-serif;
+  font-size: 6vw;
+  font-style: normal;
+}
+#title h1 {
+  font-family: "Nothing You Could Do", sans-serif;
+  font-style: italic;
+  font-size: 3vw;
+  text-align: center;
+  color: #E60013;
+  margin-top: vw;
+}
+
+
+
+.row {
+  width: 60vw;
+  margin: auto;
+}
+
+.grid-containerl {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: relative;
+  animation: mymovel 1.2s ease-in-out;
+  }
+@keyframes mymovel {
+  0% {left: 200px; opacity: 0%;}
+  100% {left: 0px; opacity: 100%;}
+}
+
+.grid-containerr {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: relative;
+  animation: mymover 1.2s ease-in-out;
+  }
+@keyframes mymover {
+  0% {right: 200px; opacity: 0%;}
+  100% {right: 0px; opacity: 100%;}
+}
+
+.grid-item {padding: 2vw 0;}
+.grid-item:hover {transform: scale(1.1); transition-duration: 0.6s;}
+
+.grid-item img {width: 90%;}
+
+
+
+#footer {
+  text-align: center;
+  padding: 3vw 0;
+}
+
+#footer p {
+  text-align: center;
+  color: gray;
+  font-size: 0.7vw;
+}
